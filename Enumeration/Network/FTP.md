@@ -5,6 +5,7 @@
 To determine the FTP server version and other information, you can use a tool like `nc` or `ftp` to connect to the FTP server and retrieve the banner:
 
 `nc <target> 21`
+
 `ftp <target>`
 
 ## Anonymous FTP Access

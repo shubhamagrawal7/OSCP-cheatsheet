@@ -6,8 +6,7 @@ Manual web enumeration involves manually checking a web application for vulnerab
 
 The robots.txt file is used by web crawlers to determine which parts of a website should not be crawled or indexed. It is often used by web developers to exclude sensitive or private information from being indexed by search engines.
 
-Example:
-To check the robots.txt file of a web application, simply add `/robots.txt` to the end of the URL. For example, if the URL of the web application is `https://example.com`, then the URL to check the robots.txt file would be `https://example.com/robots.txt`.
+**Example: To check the robots.txt file of a web application, simply add `/robots.txt` to the end of the URL. For example, if the URL of the web application is `https://example.com`, then the URL to check the robots.txt file would be `https://example.com/robots.txt`.**
 
 ## Check for comments in the source code
 

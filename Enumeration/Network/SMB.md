@@ -1,0 +1,55 @@
+# SMB Enumeration
+
+## SMB Version Detection
+
+To determine the SMB version running on the target system, you can use the `smbclient` tool:
+
+smbclient -L <target>
+
+This command will list the shares available on the target system, as well as the SMB version being used.
+
+## SMB Authentication Enumeration
+
+If the target system is using SMB2 or later, it may be vulnerable to an authentication bypass attack. You can use the `smbclient` tool to check for this vulnerability:
+
+smbclient //<target>/<share> -U "<username>%<password>"
+
+Replace `<target>` with the IP address or hostname of the target system, `<share>` with the name of a share on the target system, `<username>` with a username to test, and `<password>` with a password to test.
+
+If the authentication is successful, you will be prompted with an `smb: \>` prompt, indicating that you have access to the share.
+
+## SMB Brute-Force Attacks
+
+If you have a list of usernames and passwords to test, you can use a tool like `hydra` to perform a brute-force attack against the target system:
+
+hydra -l <username> -P <password list> <target> smb
+
+Replace `<username>` with a username to test, `<password list>` with the path to a file containing a list of passwords to try, and `<target>` with the IP address or hostname of the target system.
+
+Sure, here's the unrendered markdown for the above output:
+
+# Enum4linux
+
+Enum4linux is a tool used for enumerating information from Windows and Samba systems. It can be used to extract various types of information, including user and group details, share and disk information, and password policies.
+
+## Syntax
+
+```bash
+enum4linux -a <target>
+```
+
+## Options
+
+* `-a` - Perform all scans
+
+## Example
+
+To perform all scans using enum4linux, use the following command:
+
+```bash
+enum4linux -a <target IP>
+```
+
+This will perform all possible scans and enumerate as much information as possible from the target system. The output will include information about shares, users, groups, disks, and more.
+
+Note that this command does not attempt to enumerate user passwords. To do so, you can use the `-A` option instead of `-a`. However, attempting to brute force passwords without permission is illegal and should not be attempted without proper authorization.

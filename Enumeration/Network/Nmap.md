@@ -4,14 +4,14 @@
 
 `nmap -sC -sV -T5 -A -p- <targetIP>`
 
-`-sC: Runs the default script scan on the target system.
+`**-sC:** Runs the default script scan on the target system.`
 
--sV: Performs version detection on the target system, which can help identify which services are running and what vulnerabilities they may be susceptible to.
+`-sV: Performs version detection on the target system, which can help identify which services are running and what vulnerabilities they may be susceptible to.`
 
--T5: Sets the timing template to "Insane" which means that Nmap will send probes at a very high speed.
+`-T5: Sets the timing template to "Insane" which means that Nmap will send probes at a very high speed.`
 
  -A: This option will enable OS detection, version detection, script scanning, and traceroute.
- 
+
 -p-: This option specifies that all ports should be scanned, rather than just the common ports.`
 
 ## Basic Nmap Commands

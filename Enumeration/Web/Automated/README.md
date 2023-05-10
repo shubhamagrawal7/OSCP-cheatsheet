@@ -1,4 +1,4 @@
-# Web Enumeration with Nikto, Gobuster, Wpscan, and Dirb
+# Web Enumeration with Nikto, Gobuster, and Wpscan
 
 Web enumeration is the process of discovering and identifying web applications and their associated technologies and vulnerabilities. Here are some useful tools for conducting web enumeration.
 
@@ -33,6 +33,9 @@ gobuster dir -u <target URL> -w <wordlist file path> -x <file extensions>
 gobuster vhost -u <target URL> -w <wordlist file path>
 ```
 
+* `-u <target URL>: Specifies the target URL of the website or web application.`
+* `-w <wordlist file path>: Specifies the path to the wordlist file. Ex: /usr/share/wordlists/dirbuster/directory-2.3-medium-list.txt`
+
 ## Wpscan
 
 Wpscan is a WordPress vulnerability scanner. It can be used to scan WordPress installations for known vulnerabilities, plugins, and themes. Here are some examples of how to use Wpscan:
@@ -46,15 +49,5 @@ wpscan --url <target URL> --enumerate u
 ### Password Bruteforcing
 
 ```
-wpscan --url <target URL> --wordlist <wordlist file path> --username <username> --threads <number of threads> --passwords <passwords file path>
-```
-
-## Dirb
-
-Dirb is a web content scanner that looks for hidden directories on web servers. It is designed to be fast and effective, making it a popular choice for web enumeration. Here's an example of how to use Dirb:
-
-### Directory Enumeration
-
-```
-dirb <target URL> <wordlist file path>
+wpscan --url <target URL> --wordlist <wordlist file path> --username <username> --passwords <passwords file path>
 ```

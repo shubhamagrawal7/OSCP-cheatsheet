@@ -4,7 +4,7 @@
 
 `nmap -sC -sV -T5 -A -p- <targetIP>`
 
-`**-sC:** Runs the default script scan on the target system.`
+**-sC:** Runs the default script scan on the target system.
 
 `-sV: Performs version detection on the target system, which can help identify which services are running and what vulnerabilities they may be susceptible to.`
 

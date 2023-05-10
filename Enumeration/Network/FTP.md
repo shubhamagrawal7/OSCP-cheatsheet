@@ -15,6 +15,7 @@ If anonymous FTP access is enabled on the server, you can connect to it with the
 `ftp <target>`
 
 username: anonymous
+
 password:
 
 Once you have logged in, you can use FTP commands like `ls` to list files and directories, `get <file-name>` to download files and `put <file-name>` to upload files.

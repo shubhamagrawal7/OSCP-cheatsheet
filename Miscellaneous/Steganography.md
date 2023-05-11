@@ -1,6 +1,6 @@
 # Steganography Cheatsheet
 
-Steganography is the practice of hiding secret information within non-secret data or files. This cheatsheet provides an overview of various steganography techniques and tools to assist in uncovering hidden information.
+Steganography is the practice of hiding secret information within non-secret data or files. This cheatsheet provides an overview of various steganography techniques and tools to assist in uncovering hidden information. **Steganography is not a part of OSCP**
 
 ## Steganography Techniques
 

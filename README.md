@@ -16,9 +16,12 @@ Cheatsheet is divided into four sections:
 * If Nmap tells about Web service running, then you can run [Web Automated Enumeration](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Enumeration/Web/Automated%20Enumeration.md) and [Web Manual Enumeration](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Enumeration/Web/Manual%20Enumeration.md)
 * **Quick Tip:** Keep noting down all the information you gather during the enumeration process. To open sublime text editor, use `subl` command.
 * Wordlists and Password list can be found [here](The attacker sets up a listener using `nc -lvp <attacker_port>` and waits for the target machine to connect back.).
+* Sometimes you will find images stored in the FTP directory or SMB shares, there is a possibility of hidden message in them. Use [Steganography Cheatsheet](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Miscellaneous/Steganography.md) to solve them.
 
 ## Exploitation
 
+* After enumeration it is time to exploit. To try bruteforcing either a service password, like FTP, SSH, SMB, use [Bruteforcing Cheatsheet](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Exploitation/Bruteforcing.md)
+* 
 
 ## Privilege Escalation
 

@@ -4,7 +4,6 @@ After performing Nmap scan, if you see SMB port is open, then you can use the fo
 * The first thing to look for is open shares. It can be done using [SMB Version Detection](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Enumeration/Network/SMB.md#smb-version-detection)
 * After finding the list of shares, its time to connect to each one of them anonymously (unless you have the password for the shares). Use [SMB Auth Enum](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Enumeration/Network/SMB.md#smb-authentication-enumeration) and do not give any username and password with it.
 * Traverse through the shares using `ls` command and download them to your local machine using `get` command.
-* Your last resort would be to try [bruteforcing](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Enumeration/Network/SMB.md#smb-brute-force-attacks) SMB shares
 
 ## SMB Version Detection
 

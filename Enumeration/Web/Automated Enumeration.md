@@ -24,7 +24,7 @@ gobuster dir -u <target URL> -w <wordlist file path> -x <file extensions>
 ```
 
 * `-u <target URL>: Specifies the target URL of the website or web application.`
-* `-w <wordlist file path>: Specifies the path to the wordlist file. Ex: /usr/share/wordlists/dirbuster/directory-2.3-medium-list.txt`
+* `-w <wordlist file path>: Specifies the path to the wordlist file. Ex: /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt`
 * `-x <file extensions>: Specifies the file extensions to be used during the enumeration. Ex: -x php,txt,html would search for directories or files with the extensions .php, .txt, and .html.`
 
 ### Virtual Host Enumeration

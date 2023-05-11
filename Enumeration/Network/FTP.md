@@ -2,6 +2,11 @@
 
 After Nmap scan, if you see that FTP service is open. You can use the following commands to do some checks.
 
+* Connect to FTP service
+* Check if Anonymous Login is Enabled or not.
+* If enabled, check every file and folder, download every file and also look for hidden files.
+*
+
 ## Banner Grabbing
 
 To determine the FTP server version and other information, you can use a tool like `nc` or `ftp` to connect to the FTP server and retrieve the banner:

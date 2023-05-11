@@ -15,15 +15,14 @@ Cheatsheet is divided into four sections:
 * Nmap scan will tell what services are open and according to that you can perform enumeration for those particular scans. For ex: If FTP is open then [FTP Enumeration](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Enumeration/Network/FTP.md)
 * If Nmap tells about Web service running, then you can run [Web Automated Enumeration](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Enumeration/Web/Automated%20Enumeration.md) and [Web Manual Enumeration](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Enumeration/Web/Manual%20Enumeration.md)
 * **Quick Tip:** Keep noting down all the information you gather during the enumeration process. To open sublime text editor, use `subl` command.
-* Wordlists and Password list can be found [here](The attacker sets up a listener using `nc -lvp <attacker_port>` and waits for the target machine to connect back.).
+* Wordlists and Password list can be found [here](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Miscellaneous/Important_Path.md#wordlists).
 * Sometimes you will find images stored in the FTP directory or SMB shares, there is a possibility of hidden message in them. Use [Steganography Cheatsheet](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Miscellaneous/Steganography.md) to solve them.
 
 ## Exploitation
 
-* After enumeration it is time to exploit. To try bruteforcing either a service password, like FTP, SSH, SMB, use [Bruteforcing Cheatsheet](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Exploitation/Bruteforcing.md)
-* 
+* After enumeration it is time to exploit. To try bruteforcing either a service password, like FTP, SSH, SMB, or a login password, use [Bruteforcing Cheatsheet](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Exploitation/Bruteforcing.md)
+* If you are able to execute a command on the vulnerable machine, use [Reverse Shell cheatsheet](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Exploitation/ReverseShell.md) to get a reverse connection and further a stabilized shell.
 
 ## Privilege Escalation
 
-After you have gained access to the machine, its time to [Privilege Escalate]()
-The user flags can mostly be found in the user home directories with the name user.txt.
+* Once you have a reverse shell and you can execute OS commands on the vulnerable machine, use [Privilege Escalation cheatsheet](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Privilege%20Escalation/PrivilegeEscalation.md) to escalate access from a normal user to root user.

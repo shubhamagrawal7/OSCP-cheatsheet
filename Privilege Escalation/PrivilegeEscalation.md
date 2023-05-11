@@ -22,7 +22,7 @@ Privilege Escalation is the process of gaining higher-level permissions or privi
 4. **Check for SUID/SGID Bits Enabled Files:**
    - Identifying files with SUID (Set User ID) or SGID (Set Group ID) permissions that can be leveraged to escalate privileges.
    - Example: `find / -perm -4000 -type f -exec ls -l {} \;`
-   - Online Resource: [https://book.hacktricks.xyz/linux-unix/privilege-escalation#suid-and-sgid](https://book.hacktricks.xyz/linux-unix/privilege-escalation#suid-and-sgid)
+   - Online Resource: [https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-and-suid](https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-and-suid)
 
 5. **Check for OS, Kernel Version Exploits:**
    - Searching for known OS or kernel vulnerabilities using tools like `searchsploit` to find relevant exploits.
@@ -37,12 +37,12 @@ Privilege Escalation is the process of gaining higher-level permissions or privi
 7. **Check for Binaries with Sudo Privileges:**
    - Using the `sudo -l` command to identify binaries that can be executed with elevated privileges.
    - Example: `sudo -l`
-   - Online Resource: [https://book.hacktricks.xyz/linux-unix/privilege-escalation#sudo](https://book.hacktricks.xyz/linux-unix/privilege-escalation#sudo)
+   - Online Resource: [https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-and-suid](https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-and-suid)
 
 8. **Cron Jobs:**
    - Inspecting cron jobs to identify any scheduled tasks executed with elevated privileges.
    - Example: `crontab -l`
-   - Online Resource: [https://book.hacktricks.xyz/linux-unix/privilege-escalation#cron-jobs](https://book.hacktricks.xyz/linux-unix/privilege-escalation#cron-jobs)
+   - Online Resource: [https://book.hacktricks.xyz/linux-hardening/privilege-escalation#scheduled-cron-jobs](https://book.hacktricks.xyz/linux-hardening/privilege-escalation#scheduled-cron-jobs)
 
 9. **Linux Capabilities:**
    - Checking for Linux capabilities assigned to binaries, which can provide privileged access.
@@ -52,15 +52,15 @@ Privilege Escalation is the process of gaining higher-level permissions or privi
 10. **Using Network File Sharing:**
     - Exploiting network file sharing misconfigurations or vulnerabilities to gain unauthorized access.
     - Example: Exploiting misconfigured NFS (Network File System) exports.
-    - Online Resource: [https://book.hacktricks.xyz/linux-unix/privilege-escalation#network-file-systems](https://book.hacktricks.xyz/linux-unix/privilege-escalation#network-file-systems)
+    - Online Resource: [https://book.hacktricks.xyz/linux-hardening/privilege-escalation/nfs-no_root_squash-misconfiguration-pe](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/nfs-no_root_squash-misconfiguration-pe)
 
 11. **Creating Own Binary and Changing PATH Environment Variable:**
     - Creating a custom binary or script and manipulating the PATH environment variable to execute it with higher privileges.
     - Example: Creating a malicious `ls` binary and adding its path to the beginning of the PATH variable.
-    - Online Resource: [https://book.hacktricks.xyz/linux-unix/privilege-escalation#own-binary-and-path](https://book.hacktricks.xyz/linux-unix/privilege-escalation#own-binary-and-path)
+    - Online Resource: [https://book.hacktricks.xyz/linux-hardening/privilege-escalation#writable-path-abuses](https://book.hacktricks.xyz/linux-hardening/privilege-escalation#writable-path-abuses)
 
 ## Additional Resources
 
 - GTFOBins: [https://gtfobins.github.io/](https://gtfobins.github.io/)
 - Windows Privilege Escalation Commands: [https://book.hacktricks.xyz/windows/windows-local-privilege-escalation](https://book.hacktricks.xyz/windows/windows-local-privilege-escalation)
-- Linux Privilege Escalation Scripts: [https://github.com/diego-treitos/linux-smart-enumeration](https://github.com/diego-treitos/linux-smart-enumeration)
+- Linux Privilege Escalation Scripts: [https://github.com/diego-treitos/linux-smart-enumeration](https://book.hacktricks.xyz/linux-hardening/privilege-escalation)

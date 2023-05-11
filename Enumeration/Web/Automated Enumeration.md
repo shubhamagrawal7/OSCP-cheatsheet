@@ -54,11 +54,17 @@ Wpscan is a WordPress vulnerability scanner. It can be used to scan WordPress in
 ### User Enumeration
 
 ```
-wpscan --url <target URL> --enumerate u
+wpscan --url <target URL> --enumerate
 ```
+
+The above syntax will enumerate everything for a wordpress site like: Installed Plugins, TimThumbs, Usernames, Wordpress Version etc.
 
 ### Password Bruteforcing
 
 ```
-wpscan --url <target URL> --wordlist <wordlist file path> --username <username> --passwords <passwords file path>
+wpscan --url <target URL> --username <username> --passwords <passwords file>
 ```
+
+* `--url <target URL>: Specifies the target URL of the WordPress site`
+* `--username <username>: Specifies the username to target.`
+* `--passwords <passwords file>: Specifies the file containing the list of passwords to be used in the brute-force attack`

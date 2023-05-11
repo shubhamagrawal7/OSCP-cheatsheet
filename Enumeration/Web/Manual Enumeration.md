@@ -19,3 +19,18 @@ Comments in the source code of a web application can provide valuable informatio
 An open directory listing occurs when a web server is configured to show the contents of a directory rather than a specific web page. This can reveal sensitive information about the application's file structure and can provide attackers with valuable information about potential vulnerabilities.
 
 **Example: To check for open directory listings, simply navigate to the root directory of the web application and see if a directory listing is displayed. For example, if the URL of the web application is `https://example.com/images/`, then navigate to `https://example.com/images/` and check if a directory listing is displayed.**
+
+## Checking Cookies
+
+During website enumeration, checking cookies can provide valuable information about the site's functionality, authentication mechanisms, and potential vulnerabilities. Here are some techniques for checking cookies:
+
+* **Manipulate Cookies**
+  - Use a browser extension like EditThisCookie or Cookie Editor to modify cookie values.
+  - Experiment with modifying cookie values to see if it affects the website's behavior.
+  - For example, you can try changing authentication-related cookies or session cookies to test for potential vulnerabilities or bypass authentication mechanisms.
+
+* **Decode/Decrypt Cookies**
+  - If the cookies are encoded or encrypted, use appropriate techniques to decode or decrypt them.
+  - Common encoding schemes include Base64 and URL encoding.
+  - If encryption is involved, analyze the encryption algorithm and key management to attempt decryption.
+  - Tools like CyberChef or custom scripts can assist in decoding or decrypting cookies.

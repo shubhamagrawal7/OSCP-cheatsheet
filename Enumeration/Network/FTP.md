@@ -4,8 +4,8 @@ After Nmap scan, if you see that FTP service is open. You can use the following 
 
 * Connect to FTP service
 * Check if Anonymous Login is Enabled or not.
-* If enabled, check every file and folder, download every file and also look for hidden files.
-*
+* If enabled, check every file and folder, download each file and also look for hidden files.
+* The last resort if not able to authenticate will be [brute-forcing](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Enumeration/Network/FTP.md#brute-force-attacks)
 
 ## Banner Grabbing
 

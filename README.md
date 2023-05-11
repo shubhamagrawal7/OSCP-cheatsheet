@@ -20,7 +20,7 @@ Cheatsheet is divided into four sections:
 
 ## Exploitation
 
-* After enumeration it is time to exploit. To try bruteforcing either a service password, like FTP, SSH, SMB, or a login password, use [Bruteforcing Cheatsheet](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Exploitation/Bruteforcing.md)
+* After enumeration it is time to exploit. To crack authentication, use BruteForcing. For ex: a service password, like FTP, SSH, SMB, or a login password, use [Bruteforcing Cheatsheet](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Exploitation/Bruteforcing.md)
 * If you are able to execute a command on the vulnerable machine, use [Reverse Shell cheatsheet](https://github.com/shubhamagrawal7/OSCP-cheatsheet/blob/main/Exploitation/ReverseShell.md) to get a reverse connection and further a stabilized shell.
 
 ## Privilege Escalation

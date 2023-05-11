@@ -20,27 +20,27 @@ Privilege Escalation is the process of gaining higher-level permissions or privi
 3. **Check if Passwd and Shadow Files are Writable:**
    - Checking if the `/etc/passwd` and `/etc/shadow` files are writable to modify user accounts or credentials.
    - Example: `ls -l /etc/passwd /etc/shadow`
-   - 
+   - If Passwd file is writable, use this resource: [Writable Passwd File](https://steflan-security.com/linux-privilege-escalation-writable-passwd-file/)
+   - If Shadow file is writable, use this resource: [Writable Shadow File](https://blog.geoda-security.com/2019/02/privilege-escalation-exploiting-write.html)
 
-4. **Check for SUID/SGID Bits Enabled Files:**
+4. **Exploit Sudo Privileges:**
+    - Using the `sudo -l` command to check sudo privileges for the current user.
+    - Example: `sudo -l`
+    - Online Resource: [Exploiting Binaries with Sudo Privileges](https://www.hackingarticles.in/linux-privilege-escalation-using-exploiting-sudo-rights/)
+
+5. **Check for SUID/SGID Bits Enabled Files:**
    - Identifying files with SUID (Set User ID) or SGID (Set Group ID) permissions that can be leveraged to escalate privileges.
-   - Example: `find / -perm -4000 -type f -exec ls -l {} \;`
+   - Example: `find / -perm -4000 -type f 2>/dev/null`
    - Online Resource: [https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-and-suid](https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-and-suid)
 
-5. **Check for OS, Kernel Version Exploits:**
+6. **Check for OS, Kernel Version Exploits:**
    - Searching for known OS or kernel vulnerabilities using tools like `searchsploit` to find relevant exploits.
    - Example: `searchsploit linux kernel 3.10`
    - Online Resource: [https://www.exploit-db.com/](https://www.exploit-db.com/)
 
-6. **Check History Command:**
+7. **Check History Command:**
    - Inspecting the command history of the current user to find previously executed commands or sensitive information.
    - Example: `history`
-   - Online Resource: [https://book.hacktricks.xyz/linux-unix/privilege-escalation#sudo-history](https://book.hacktricks.xyz/linux-unix/privilege-escalation#sudo-history)
-
-7. **Check for Binaries with Sudo Privileges:**
-   - Using the `sudo -l` command to identify binaries that can be executed with elevated privileges.
-   - Example: `sudo -l`
-   - Online Resource: [https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-and-suid](https://book.hacktricks.xyz/linux-hardening/privilege-escalation#sudo-and-suid)
 
 8. **Cron Jobs:**
    - Inspecting cron jobs to identify any scheduled tasks executed with elevated privileges.

@@ -1,5 +1,7 @@
 # SMB Enumeration
 
+After performing Nmap scan, if you see SMB port is open, then you can use the following commands to enumerate this service.
+
 ## SMB Version Detection
 
 To determine the SMB version running on the target system, you can use the `smbclient` tool:

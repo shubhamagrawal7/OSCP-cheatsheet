@@ -1,5 +1,7 @@
 # Nmap and Useful Commands
 
+The first thing to do when you have the vulnerable machine IP is Nmap Scan. Use the below given scan to quickly look into what services are there.
+
 ## Directly use this or follow the below given guide
 
 ```

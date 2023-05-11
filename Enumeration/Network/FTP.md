@@ -1,5 +1,7 @@
 # FTP Enumeration
 
+After Nmap scan, if you see that FTP service is open. You can use the following commands to do some checks.
+
 ## Banner Grabbing
 
 To determine the FTP server version and other information, you can use a tool like `nc` or `ftp` to connect to the FTP server and retrieve the banner:
